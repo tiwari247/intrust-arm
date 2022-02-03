@@ -1,0 +1,58 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "prefix": {
+      "value": "qalab"
+    },
+    "adminUsername": {
+      "value": "qaadmin"
+    },
+    "adminPassword": {
+      "value": "QAIntrAzLab123"
+    },
+    "_artifactsLocation": {
+      "value": "https://github.com/tiwari247/intrust-arm/blob/main/DSC/DCConfiguration.zip?raw=true"
+    },
+    "IntrPackage": {
+      "value": "https://www.dropbox.com/s/t0ejy84sqcm4amx/InTrust-Full-Package_1141.exe?dl=1"
+    },
+    "IntrUpdate": {
+      "value": "https://www.dropbox.com/s/tkfkjx3e8wzxkw0/QuestInTrust1141Update1_20191217.exe?dl=1"
+    },
+    "IntrLic": {
+      "value": "https://www.dropbox.com/s/1i1rn5tt5i5tmt1/license.asc?dl=1"
+    },
+    "GPOURL": {
+      "value": "https://github.com/sergey-goncharenko/azure-intrust-template-dev/raw/master/DSC/gpo.zip"
+    },
+    "ETWURL": {
+      "value": "https://github.com/tiwari247/intrust-arm/blob/main/DSC/InTrust_11.4.1_Update_20200703.zip?raw=true"
+    },
+    "ITSSURL": {
+      "value": "https://www.dropbox.com/s/iwmxjsdbtj8me6l/IT-Security-Search_1141.zip?dl=1"
+    },
+    "ITSSUpdateURL": {
+      "value": "https://www.dropbox.com/s/1nw5j5yndbo7tft/ITSearch_Update2_11.4.1.17592.exe?dl=1"
+    },
+    "deploymode": {
+      "value": "full"
+    },
+    "SMTPSmartHostAddress": {
+      "value": "smtp.office365.com"
+    },
+    "SMTPSmartHostPort": {
+      "value": "25"
+    },
+    "SMTPSmartHostUserName": {
+      "value": "chandra.prakash.tiwari@quest.com"
+    },
+
+    "SMTPMailFrom": {
+      "value": "chandra.prakash.tiwari@quest.com"
+    },
+    "DefaultOperatorAddress": {
+      "value": "chandra.prakash.tiwari@quest.com"
+    }
+  }
+}
