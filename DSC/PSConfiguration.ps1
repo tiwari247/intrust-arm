@@ -210,11 +210,11 @@
             Ensure = "Present"
             DependsOn = "[xCredSSP]Client"
         }
-        DownloadAndRunSysmon DwnldSysmon
-        {
-            CM = "CM"
-            Ensure = "Present"
-            DependsOn = "[xCredSSP]Client"
+#        DownloadAndRunSysmon DwnldSysmon
+#        {
+#            CM = "CM"
+#            Ensure = "Present"
+#           DependsOn = "[xCredSSP]Client"
         }
 
  #       InstallITSS InstallITSSTask

@@ -12,7 +12,7 @@
       "value": "QAIntrAzLab123"
     },
     "_artifactsLocation": {
-      "value": "https://github.com/tiwari247/intrust-arm/blob/main/DSC/DCConfiguration.zip?raw=true"
+      "value": "https://github.com/tiwari247/intrust-arm/raw/main/"
     },
     "IntrPackage": {
       "value": "https://www.dropbox.com/s/t0ejy84sqcm4amx/InTrust-Full-Package_1141.exe?dl=1"
@@ -24,10 +24,10 @@
       "value": "https://www.dropbox.com/s/1i1rn5tt5i5tmt1/license.asc?dl=1"
     },
     "GPOURL": {
-      "value": "https://github.com/sergey-goncharenko/azure-intrust-template-dev/raw/master/DSC/gpo.zip"
+      "value": "https://github.com/tiwari247/intrust-arm/raw/main/DSC/gpo.zip"
     },
     "ETWURL": {
-      "value": "https://github.com/tiwari247/intrust-arm/blob/main/DSC/InTrust_11.4.1_Update_20200703.zip?raw=true"
+      "value": "https://github.com/tiwari247/intrust-arm/raw/main/DSC/InTrust_11.4.1_Update_20200703.zip"
     },
     "ITSSURL": {
       "value": "https://www.dropbox.com/s/iwmxjsdbtj8me6l/IT-Security-Search_1141.zip?dl=1"
