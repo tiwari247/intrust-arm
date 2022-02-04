@@ -19,6 +19,6 @@ steps:
     resourceGroupName: 'Milestone1'
     location: 'West US 3'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/tiwari247/intrust-arm'
-    csmParametersFileLink: 'https://github.com/tiwari247/intrust-arm'
+    csmFileLink: 'https://github.com/tiwari247/intrust-arm/blob/main/azuredeploy.json'
+    csmParametersFileLink: 'https://github.com/tiwari247/intrust-arm/blob/main/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'
