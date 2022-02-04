@@ -215,7 +215,7 @@
 #            CM = "CM"
 #            Ensure = "Present"
 #           DependsOn = "[xCredSSP]Client"
-        }
+ #       }
 
  #       InstallITSS InstallITSSTask
  #       {
