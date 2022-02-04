@@ -10,15 +10,13 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: AzureResourceManagerTemplateDeployment@3
+- task: Maven@3
   inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'QBU-PM.RD.SBox.InTrust (d84f4a45-3d5c-4eb4-bcfa-f508dcd48ef3)'
-    subscriptionId: 'd84f4a45-3d5c-4eb4-bcfa-f508dcd48ef3'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'Milestone1'
-    location: 'West US 3'
-    templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/tiwari247/intrust-arm/blob/main/azuredeploy.json'
-    csmParametersFileLink: 'https://github.com/tiwari247/intrust-arm/blob/main/azuredeploy.parameters.json'
-    deploymentMode: 'Incremental'
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
