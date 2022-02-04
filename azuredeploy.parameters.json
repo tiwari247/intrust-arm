@@ -36,7 +36,7 @@
       "value": "https://www.dropbox.com/s/1nw5j5yndbo7tft/ITSearch_Update2_11.4.1.17592.exe?dl=1"
     },
     "deploymode": {
-      "value": "full"
+      "value": "nolinux"
     },
     "SMTPSmartHostAddress": {
       "value": "smtp.office365.com"
