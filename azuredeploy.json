@@ -169,6 +169,17 @@
       "sourcePortRange": "*",
       "destinationAddressPrefix": "*"
     },
+	"securityGroupRule1": {
+      "name": "WinRM",
+      "priority": 1010,
+      "sourceAddressPrefix": "*",
+      "protocol": "Tcp",
+      "destinationPortRange": "5986",
+      "access": "Allow",
+      "direction": "Inbound",
+      "sourcePortRange": "*",
+      "destinationAddressPrefix": "*"
+    },
     "vmrole": [
       "DC",
       "INTR",
@@ -471,6 +482,18 @@
               "direction": "[variables('securityGroupRule').direction]",
               "sourcePortRange": "[variables('securityGroupRule').sourcePortRange]",
               "destinationAddressPrefix": "[variables('securityGroupRule').destinationAddressPrefix]"
+            },
+			{
+            "name": "[variables('securityGroupRule1').name]",
+            "properties": {
+              "priority": "[variables('securityGroupRule1').priority]",
+              "sourceAddressPrefix": "[variables('securityGroupRule1').sourceAddressPrefix]",
+              "protocol": "[variables('securityGroupRule1').protocol]",
+              "destinationPortRange": "[variables('securityGroupRule1').destinationPortRange]",
+              "access": "[variables('securityGroupRule1').access]",
+              "direction": "[variables('securityGroupRule1').direction]",
+              "sourcePortRange": "[variables('securityGroupRule1').sourcePortRange]",
+              "destinationAddressPrefix": "[variables('securityGroupRule1').destinationAddressPrefix]"
             }
           }
         ]
